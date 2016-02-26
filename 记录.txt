@@ -1,0 +1,7 @@
+1.重置ubuntu root密码
+开机按 shift 键进入recovery模式中，选择root
+mount -rw -o remount /
+passwd
+2.了解ssl
+3.网络
+4.操作系统
