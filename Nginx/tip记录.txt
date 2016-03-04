@@ -1,0 +1,45 @@
+1.重置ubuntu root密码
+开机按 shift 键进入recovery模式中，选择root
+mount -rw -o remount /
+passwd
+2.更改ubuntu ip 网关 域名
+sudo vi /etc/network/interfaces
+auto eth0  
+iface eth0 inet static  
+address 192.168.2.1  
+gateway 192.168.2.254  
+重启
+sudo /etc/init.d/networking restart 
+dns
+/etc/resolv.conf
+nameserver ip
+chattr +i /etc/resolv.conf
+3.operation not supported while reading flags on /etc/resolv.cof解决办法？
+apt-get remove resolvconf
+4.linux下查看机器cup配置
+1). 查看物理CPU的个数
+#cat /proc/cpuinfo |grep "physical id"|sort |uniq|wc -l
+ 
+2). 查看逻辑CPU的个数
+#cat /proc/cpuinfo |grep "processor"|wc -l
+ 
+3). 查看CPU是几核
+#cat /proc/cpuinfo |grep "cores"|uniq
+ 
+4). 查看CPU的主频
+#cat /proc/cpuinfo |grep MHz|uniq
+5.获取目标域名ip
+nslookup www.baidu.com
+6.绑定域名和ip地址
+修改/etc/hosts文件 ubuntu
+C:\Windows\System32\drivers\etc\hosts如：127.0.0.1 test.com.cn windows
+添加 192.168.107.187 nginx-1.com
+7.vim show line number
+:set number
+8.curl指令
+9.解压指令
+tar zxf ..
+10.删除软件所有内容
+$ sudo apt-get --purge remove lighttpd
+11.查询nofile
+ulimit -n
