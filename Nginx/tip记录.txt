@@ -38,8 +38,12 @@ C:\Windows\System32\drivers\etc\hosts如：127.0.0.1 test.com.cn windows
 :set number
 8.curl指令
 9.解压指令
-tar zxf ..
+tar -xvzf openssl-1.0.1g.tar.gz
 10.删除软件所有内容
 $ sudo apt-get --purge remove lighttpd
 11.查询nofile
 ulimit -n
+12.删除包含内容的文件夹
+rm -rf xxx
+13.vim删除文件全部内容
+:%d
