@@ -1,0 +1,4 @@
+[{"listen":"8080","servers":[{"server":"server1","locations":[{"location":"\/","upstream":"host1"},{"location":"\/lua","upstream":"host2"}]},
+{"server":"server2","locations":[{"location":"\/","upstream":"host3"},{"location":"\/lua","upstream":"host4"}]}]},{"listen":"8081","servers":[{"server":"server1","locations":[{"location":"\/","upstream":"host1"},{"location":"\/lua","upstream":"host2"}]},
+{"server":"server2","locations":[{"location":"\/","upstream":"host3"},{"location":"\/lua","upstream":"host4"}]}]}]
+
